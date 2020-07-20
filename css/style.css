@@ -57,18 +57,16 @@ a:hover, a:active{
 }
 .head{
 	position: relative;
-	left: 0px;
-	right: 0px;
-	letter-spacing: 4px;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
 	width: 100%;
-}
-img{
-	vertical-align: middle;
 }
 .image{
 	width: 100%;
 }
 .cent_text{
+	letter-spacing: 4px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -90,16 +88,19 @@ img{
 	color: #f1f1f1;
 }
 .about_{
-	background-color: rgb(180,200,240);
+	background-color: red; /* For browsers that do not support gradients */
+	 background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+	position: relative;
+	box-sizing: border-box;
 	display: block;
-	position: absolute;
+	top: 0px;
+	left: 0px;
 	height: 700px;
 	width: 100%;
 	padding-left: 60px;
 }
 .about_text
 {
-	box-sizing: border-box;
 	float: left;
 	width: 40%;
 	padding: 30px;
@@ -141,4 +142,53 @@ img{
 }
 .imagemine figcaption{
 	text-align: center;
+}
+.headtext2box{
+	padding: 20px;
+}
+p.headtext2{
+	width: 30%;
+	color: rgb(20, 100, 20);
+	font-family: arial;
+	font-size: 36px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	padding:5px;
+	border-radius: 20px;
+	border-top: 5px solid green;
+	border-bottom: 2px dotted green;
+	text-align: center;
+}
+.skilldiv{
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(orange, yellow, red); /* Standard syntax (must be last) */
+}
+div.biggallery{
+background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(orange, yellow, red); /* Standard syntax (must be last) */
+}
+div.gallery 
+{
+text-align: center;
+  margin: 30px;
+  border: 5px solid #ccc;
+ float: left;
+ width: 180px;
+}
+
+div.gallery:hover 
+{
+  border: 5px solid #777;
+}
+
+div.gallery img 
+{
+  width: 100%;
+  height: auto;
+}
+
+div.desc 
+{
+  padding: 15px;
+  text-align: center;
 }
