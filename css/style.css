@@ -221,7 +221,7 @@ background-image:radial-gradient(circle,white,grey,darkgrey);
 }
 .protext{width:30%;border:3px solid blue;position:relative;margin:auto;text-align:center; padding:50px; color: royalblue; font-family:arial;
 }
-.prodiv{padding:20px;animation-name:pro; animation-duration:10s;}
+.prodiv{padding:20px;animation-name:pro; animation-duration:10s;animation-delay:2s;}
 @keyframes pro{
 0%{transform:rotate(0deg); color:white;};
 25%{transform:rotate(60deg); color:blue;};
@@ -232,6 +232,7 @@ background-image:radial-gradient(circle,white,grey,darkgrey);
 .bol{
 animation-name:rota;
 animation-duration:1s;
+animation-delay:2s;
 animation-iteration-count:infinite;
 }
 @keyframes rota{
@@ -239,7 +240,7 @@ animation-iteration-count:infinite;
 }
 .bol2{
 animation-name:rota2;
-animation-delay:0.5s;
+animation-delay:2.5s;
 animation-duration:1s;
 animation-iteration-count:infinite;
 }
