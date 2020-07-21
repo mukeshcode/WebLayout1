@@ -4,6 +4,8 @@ html,body{
 	font-size:15px;
 	line-height:1.5;
 	color: black;
+	height:100%;
+	margin:0;
 }
 html{
 	overflow-x:hidden;
@@ -22,6 +24,7 @@ a:hover, a:active{
 	right: 0;
 	left: 0;
 	z-index: 1;
+	margin:0;
 }
 .bar{
 	width: 100%;
@@ -56,6 +59,8 @@ a:hover, a:active{
 	float: right;
 }
 .head{
+	height:100%;
+	margin:0;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -73,6 +78,14 @@ a:hover, a:active{
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	text-align: center;
+	animation-name:rot;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+@keyframes rot{
+33%{letter-spacing:20px;}
+66%{letter-spacing:-10px;}
+100%{letter-spacing:4px;}
 }
 .text_black{
 	color:#fff;
@@ -88,6 +101,8 @@ a:hover, a:active{
 	color: #f1f1f1;
 }
 .about_{
+	height:100%;
+	margin:0;
 	background-color: red; /* For browsers that do not support gradients */
 	 background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
 	position: relative;
@@ -160,20 +175,27 @@ p.headtext2{
 	text-align: center;
 }
 .skilldiv{
+  height:100%;
+  margin:0;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(orange, yellow, red); /* Standard syntax (must be last) */
 }
 div.biggallery{
-background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(orange, yellow, red); /* Standard syntax (must be last) */
+border-top:3px inset green;
+border-radius:100px;
+width:60%;
+margin:auto;
+overflow:auto;
+box-sizing:border-box;
 }
 div.gallery 
 {
-text-align: center;
+ text-align: center;
   margin: 30px;
   border: 5px solid #ccc;
  float: left;
- width: 180px;
+ width: 165px;
+box-sizing:border-box;
 }
 
 div.gallery:hover 
@@ -191,4 +213,36 @@ div.desc
 {
   padding: 15px;
   text-align: center;
+}
+.project{
+height:100%;
+margin:0;
+background-image:radial-gradient(circle,white,grey,darkgrey);
+}
+.protext{width:30%;border:3px solid blue;position:relative;margin:auto;text-align:center; padding:50px; color: royalblue; font-family:arial;
+}
+.prodiv{padding:20px;animation-name:pro; animation-duration:10s;}
+@keyframes pro{
+0%{transform:rotate(0deg); color:white;};
+25%{transform:rotate(60deg); color:blue;};
+50%{transform:rotate(90deg); color:green;};
+75%{transform:rotate(120deg); color:yellow;};
+100%{transform:rotate(180deg); color:white;};
+}
+.bol{
+animation-name:rota;
+animation-duration:1s;
+animation-iteration-count:infinite;
+}
+@keyframes rota{
+100%{color:white;}
+}
+.bol2{
+animation-name:rota2;
+animation-delay:0.5s;
+animation-duration:1s;
+animation-iteration-count:infinite;
+}
+@keyframes rota2{
+100%{color:white;}
 }
